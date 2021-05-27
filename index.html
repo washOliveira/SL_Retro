@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<title>Retrospectiva S&L</title>
+</head>
+<body>
+	<div class="container">
+		<div class="titulo">
+			<hr><div class="text">
+				<h1>retrospectiva</h1>
+				<h2>Sociedade Literária</h2>
+			</div><hr>
+		</div>
+
+		<div class="cards">
+			<div class="cardTipo1">
+				<div class="card">
+					<p class="num"><b>15</b></p>
+					<p class="legenda">Livros lidos</h2>
+				</div>
+				<div class="card">
+					<p class="num"><b>2.975</b></p>
+					<p class="legenda">Páginas lidas</p>
+				</div>
+				<div class="card">
+					<p class="num"><b>8,2</b></p>
+					<p class="legenda">Páginas por dia</p>
+				</div>
+				<div class="card cardBolo">
+					<div>
+						<p class="num"><b>12</b></p>
+						<p class="legenda">Meses</p>
+					</div>
+					<img src="./assets/bolo.png" class="bolo">
+				</div>
+			</div>
+			
+			<div class="cardTipo2">
+				<div class="card cardTipo2">
+					<img src="./assets/1.jpg">
+					<div class="cardContent">
+						<img src="./assets/arrow1.svg" id="arrow1">
+						<h2>Maior livro</h2>
+						<p class="legenda">A viagem solitária</p>
+						<p class="num"><b>336<span> páginas</span></b></p>
+					</div>
+				</div>
+				<div class="card cardTipo2">
+					<img src="./assets/2.jpeg">
+					<div class="cardContent">
+						<img src="./assets/arrow2.svg" id="arrow2">
+						<h2>Menor livro</h2>
+						<p class="legenda">O alienista</p>
+						<p class="num"><b>110</b><span> páginas</span></p>
+					</div>
+				</div>
+				<div class="card">
+					<h2 style="text-align: center;">Autores por gênero</h2>
+					<div id="piechart" style="width: auto"></div>
+				</div>
+				<div class="card">
+					<h2 style="text-align: center;">Autores por nacionalidade</h2>
+					<div id="donutchart" style="width: auto"></div>
+				</div>
+			</div>
+			<div class="cardTipo3">
+				<div class="card">
+					<h2 style="text-align: center;">Gênero literário</h2>
+					<div id="barchart" style="width: auto"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="pieChart.js"></script>
+	<script type="text/javascript" src="donutChart.js"></script>
+	<script type="text/javascript" src="barChart.js"></script>
+</body>
+</html>
